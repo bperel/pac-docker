@@ -1,7 +1,8 @@
 FROM debian:jessie-slim
-MAINTAINER André Santos <dre.santos@gmail.com>
+LABEL maintainer="André Santos <dre.santos@gmail.com> Bruno Perel <brunoperel@gmail.com>"
 
 RUN apt-get -y update \
+  && apt-get -y upgrade \
   && apt-get -y install wget \
     gtk2-engines-pixbuf \
     libvte9 \
@@ -26,6 +27,9 @@ RUN apt-get -y update \
     libcrypt-rijndael-perl \
     libxml-parser-perl \
     libgtk2-unique-perl \
-    rdesktop \
-  &&  wget https://netcologne.dl.sourceforge.net/project/pacmanager/pac-4.0/pac-4.5.5.7-all.deb \
+    rdesktop
+
+RUN wget https://netcologne.dl.sourceforge.net/project/pacmanager/pac-4.0/pac-4.5.5.7-all.deb \
   && dpkg -i pac-4.5.5.7-all.deb
+
+RUN mkdir -p /root/.config/pac
