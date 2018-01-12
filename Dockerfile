@@ -26,5 +26,6 @@ RUN apt-get -y update \
     libcrypt-rijndael-perl \
     libxml-parser-perl \
     libgtk2-unique-perl \
+    rdesktop \
   &&  wget https://netcologne.dl.sourceforge.net/project/pacmanager/pac-4.0/pac-4.5.5.7-all.deb \
   && dpkg -i pac-4.5.5.7-all.deb
