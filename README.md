@@ -18,7 +18,7 @@ Latest version:
 # Usage
 
 
-Runing PAC in X11
+Running PAC in X11
 
 ```
 xhost +
