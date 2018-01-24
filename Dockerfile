@@ -6,6 +6,7 @@ RUN apt-get -y update \
   && apt-get -y install wget \
     gtk2-engines-pixbuf \
     libvte9 \
+    libcanberra-gtk-module \
     libcairo-perl \
     libgtk2-perl \
     libglib-perl \
