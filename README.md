@@ -11,9 +11,9 @@
 
 Latest version:
 
-`docker pull dresantos/pac:latest`
+`docker pull bperel/pac:latest`
 
-* [Alternatively] Build an image from Dockerfile: `docker build -t="dresantos/pac" github.com/asantos82/pac-docker`
+* [Alternatively] Build an image from Dockerfile: `docker build -t="dresantos/pac" github.com/bperel/pac-docker`
 
 # Usage
 
@@ -22,5 +22,5 @@ Runing PAC in X11
 
 ```
 xhost +
-docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --rm dresantos/pac pac
+docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --rm bperel/pac pac
 ```
